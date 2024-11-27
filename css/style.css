@@ -89,7 +89,7 @@ header {
     width: 60%;
 
     /*debug*/
-    background-color: lightblue;
+    background-color: lemonchiffon;
 }
 
 #hero-img {
@@ -109,11 +109,12 @@ header {
 
 /* main section */
 
-/* main section top */
+/* main section - top */
 
 .main-section {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     padding-top: 2rem;
 }
@@ -124,7 +125,8 @@ header {
 
 #billing-plans {
     display: flex;
-    gap: 3rem;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .plan-column {
@@ -132,10 +134,7 @@ header {
     border: 1px solid black;
 }
 
-/* plan column title (Advanced CSS selectors practice) */
-/* add a class for each span to avoid using selectors */
-
-.plan-column span:first-of-type {
+.column-title {
     text-align: center;
     border-bottom: 1px solid black;
 }
@@ -146,5 +145,73 @@ header {
 }
 
 .plan-column i {
-    padding-right: 10px;
+    padding-right: 5px;
+}
+
+/* contacts */
+
+#dropbox-contacts {
+    border: 1px solid black;
+}
+
+#contacts-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#contacts-left {
+    width: 50%;
+}
+
+#contacts-right {
+    width: 30%;
+    text-align: end;
+}
+
+#dropbox-contacts i {
+    padding-right: 5px;
+}
+
+/* main section - middle */
+
+#solutions-container {
+    display: flex;
+    width: 60%;
+}
+
+#solutions-left {
+    width: 50%;
+
+    /*debug*/
+    height: 500px;
+    background-color: lemonchiffon;
+}
+
+#solutions-right {
+    max-width: 50%;
+}
+
+/* main section bottom */
+
+#business-container {
+    width: 60%;
+}
+
+#business-cards-list{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.business-card {
+    width: 30%;
+}
+
+.bns-card-img {
+    height: 200px;
+    width: 100%;
+    background-color: lemonchiffon;
 }
