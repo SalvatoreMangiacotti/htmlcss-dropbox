@@ -149,6 +149,8 @@ header {
 
 #billing-plans {
     display: flex;
+    justify-content: center;
+    align-items: center;
     align-items: stretch;
     gap: 2rem;
     margin-bottom: 3rem;
@@ -222,7 +224,6 @@ header {
 
 #dropbox-contacts {
     border: 1px solid black;
-    width: 100%;
 }
 
 #contacts-container {
