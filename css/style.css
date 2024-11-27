@@ -22,6 +22,10 @@ h1 {
     font-size: 5rem;
 }
 
+span {
+    display: block;
+}
+
 /* header */
 
 header {
@@ -50,6 +54,7 @@ header {
     gap: 2rem;
 }
 
+
 /* hero */
 
 #hero-section {
@@ -63,7 +68,7 @@ header {
 }
 
 #hero-container {
-    width: 60%;
+    width: 70%;
 
     /*debug*/
     background-color: lavender;
@@ -99,4 +104,47 @@ header {
 #hero-wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+
+/* main section */
+
+/* main section top */
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.main-container {
+    width: 60%;
+}
+
+#billing-plans {
+    display: flex;
+    gap: 3rem;
+}
+
+.plan-column {
+    width: 30%;
+    border: 1px solid black;
+}
+
+/* plan column title (Advanced CSS selectors practice) */
+/* add a class for each span to avoid using selectors */
+
+.plan-column span:first-of-type {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.plan-column li {
+    display: flex;
+    align-items: baseline;
+}
+
+.plan-column i {
+    padding-right: 10px;
 }
