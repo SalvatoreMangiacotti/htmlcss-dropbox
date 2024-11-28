@@ -59,8 +59,15 @@ span {
 
 header {
     height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: white;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.123);
 }
 
 #main-nav {
@@ -70,10 +77,9 @@ header {
     padding: 1rem;
 }
 
-#nav-left,
-#nav-right,
-#nav-left ul,
-#nav-right ul {
+#main-nav ul,
+#main-nav #nav-right,
+#main-nav #nav-left {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -111,9 +117,6 @@ header {
     position: absolute;
 }
 
-#hero-wrapper img {
-    width: 100%;
-}
 
 #hero-wrapper {
     display: flex;
@@ -147,6 +150,22 @@ header {
     width: 50%;
 }
 
+.bd-top {
+    border-top: 1px solid black;
+}
+
+.custom-input {
+    appearance: none;
+    padding: 5px;
+    border: 5px solid #0061fe;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.custom-input:checked {
+    background-color: #0061fe;
+}
+
 #billing-plans {
     display: flex;
     justify-content: center;
@@ -154,6 +173,11 @@ header {
     align-items: stretch;
     gap: 2rem;
     margin-bottom: 3rem;
+}
+
+#billing-plans li {
+    display: flex;
+    align-items: baseline;
 }
 
 .plan-content {
@@ -168,6 +192,11 @@ header {
     border: 1px solid black;
 }
 
+.plan-column span a {
+    text-decoration: underline;
+    color: #0061fe;
+}
+
 .column-title {
     text-align: center;
     border-bottom: 1px solid black;
@@ -179,6 +208,7 @@ header {
 .plan-title {
     border-bottom: 1px solid black;
     text-align: center;
+    padding: 10px;
 }
 
 .plan-content ul {
@@ -334,7 +364,6 @@ footer {
 
 #footer-container {
     width: 70%;
-    margin: 0 auto;
 }
 
 #footer-container h3,
@@ -350,6 +379,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
+}
+
+#footer-links a {
+    text-decoration: none;
 }
 
 #footer-bottom {
