@@ -20,9 +20,6 @@ a {
     color: black;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 h1 {
     font-size: 5rem;
@@ -70,11 +67,16 @@ header {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.123);
 }
 
+#main-nav li:hover{
+    border-bottom: 1px solid black;
+}
+
 #main-nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: 100%;
     padding: 1rem;
+    width: 100%;
 }
 
 #main-nav ul,
@@ -85,6 +87,11 @@ header {
     gap: 2rem;
 }
 
+#main-nav ul li {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
 
 /* hero */
 
@@ -95,11 +102,11 @@ header {
     padding: 5rem;
     margin-bottom: 6rem;
 
-    /*debug*/
     background-color: #b4d0e6;
 }
 
 #hero-container {
+    padding-top: 2rem;
     width: 70%;
 }
 
@@ -134,7 +141,6 @@ header {
 #hero-section .button {
     margin-bottom: 1.5rem;
 }
-
 
 /* main section - top */
 
